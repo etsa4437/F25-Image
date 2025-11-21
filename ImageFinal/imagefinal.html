@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sky1" src="assets1/AdobeStock_143636858 copy.jpg">
+        <img id="ink" src="assets1/Texturelabs_InkPaint_392L.jpg">
+        <img id="brick" src="assets1/Poliigon_BrickWallReclaimed_8320_BaseColor.jpg">
+
+        <a-asset-item id="treeOBJ" src="assets10/Lowpoly_tree_sample.obj"></a-asset-item>
+        <a-asset-item id="treeMTL" src="assets10/Lowpoly_tree_sample.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-sphere position="3 -3 -3" rotation="-90 0 0" width="2.5" height="4.2" src="#ink"></a-sphere>
+      <a-plane position="0 -3 0" rotation="-90 0 0" width="2.5" height="4.2" src="#brick"></a-plane>
+      <a-obj-model src="#treeOBJ" mtl="#treeMTL" position="0 -3 -5" scale="0.05 0.05 0.05"></a-obj-model>
+
+    </a-scene>
+  </body>
+</html>
